@@ -1,0 +1,62 @@
+/* Estilos para el formulario de carga de películas */
+
+.container {
+    max-width: 500px;
+    margin: 1000px auto; /* Ajusta el valor de '50px' según sea necesario para separar el formulario del margen superior */
+    margin-bottom: 50px;
+    background-color: darkslategrey;
+    margin-top: 70px !important;
+    color: #fff;
+  } 
+  
+  /* Estilos para los campos de formulario */
+  input[type="text"],
+  input[type="number"],
+  input[type="url"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="url"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Estilos para el botón de enviar */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para las alertas */
+  .alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  

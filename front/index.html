@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/reset.css">
+  <title>CristianPelis.com</title>
+</head>
+
+<body>
+  <div>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Cristianpelis.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cristianpelis.com</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portafolio.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acercade.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">formulario</a>
+              </li>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="carouselHero" class="carousel slide separador">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/img/film red.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>One Piece Film: Red</h5>
+          <p>Uta, la cantante más popular del mundo, va a presentarse en un escenario y revelar su apariencia por
+            primera vez. Luffy y sus amigos acuden al concierto y se dan cuenta de que la voz de Uta es capaz de
+            cambiarlo todo.</p>
+          <button class="btn btn-outline-success" type="submit">VER AHORA</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/el-ascenso-de-skywalker-star-wars.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Star Wars: Episodio IX - El ascenso de Skywalker</h5>
+          <p>Finn y Poe guían a la Resistencia para detener los planes de la Primera Orden para formar un nuevo imperio,
+            mientras Rey anticipa un enfrentamiento inevitable con Kylo Ren.</p>
+          <button class="btn btn-outline-success" type="submit">VER AHORA</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/guardianes d la galaxia 3.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Guardians of the Galaxy Vol. 3</h5>
+          <p>Aunque sigue afectado por la pérdida de Gamora, Peter Quill debe reunir a su equipo para defender el
+            universo de una nueva amenaza o, en caso de fracasar, será el final de los Guardianes.</p>
+          <button class="btn btn-outline-success" type="submit">VER AHORA</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="movie-container">
+    <div id="movie-container"></div>
+  </section>
+
+  <!-- El contenido generado por JavaScript se agregará aquí -->
+  </section>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/salao0/" target="_blank"><img src="/assets/img/facebook.svg"
+          alt="Facebook"></a>
+      <a href="https://github.com/CArobledoMancuso" target="_blank"><img src="/assets/img/github-mark.svg"
+          alt="GitHub"></a>
+      <a href="https://www.instagram.com/cristian.robledo.mancuso/" target="_blank"><img
+          src="/assets/img/instagram.svg" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 Cristian Robledo 2024 | Página de Películas</p>
+  </footer>
+  <script src="/public/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
